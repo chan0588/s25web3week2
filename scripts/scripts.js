@@ -51,7 +51,7 @@ let classKids = null;
 const numLights = 12; //this variable is storing a number
 const numChair = "12"; //this variable is storing a piece of text
 
-console.log(numbers == numChairs); //gives you ture
+console.log(numLights == numChairs); //gives you ture
 console.log(numLights === numChairs);//gives you false
 
 //two eqals == checks if they are the same value
