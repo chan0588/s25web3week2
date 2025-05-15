@@ -49,7 +49,7 @@ let classKids = null;
 
 //difference between == and ==
 const numLights = 12; //this variable is storing a number
-const numChair = "12"; //this variable is storing a piece of text
+const numChairs = "12"; //this variable is storing a piece of text
 
 console.log(numLights == numChairs); //gives you ture
 console.log(numLights === numChairs);//gives you false
