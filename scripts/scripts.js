@@ -56,3 +56,25 @@ console.log(numLights === numChairs);//gives you false
 
 //two eqals == checks if they are the same value
 //three equals === checks if they are the same value and same datatype
+
+/****************************************
+ a practical example using the form field
+*************************************** */
+
+//get the field by its id, and check if the user clicked away
+document.getElementById("answer").addEventListener("blur",function(){
+    //get the value for the form field and put it into a variable
+    const userAnswer = this.value;
+   //the keyword "this" means the thing you currently have
+   //right now, that thing is the field with the id "answer"
+
+   //use an if statement to check if the value is right
+   const feedbackElement = document.getElementById("feedback");
+   if(userAnswer == "document"){
+    //add feeback into the feedback element
+    feedbackElement.textContent = "You're right!";
+   }else{
+    feedbackElement.textContent = "You're wrong";
+   }
+   
+});

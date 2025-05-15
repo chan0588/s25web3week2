@@ -6,10 +6,28 @@
     <title>Web III Week 2 - Variables</title>
 </head>
 <body>
-    
+    <main>
+        <!-- forms require two attributes:
+              actopm os wjere the form will submit to (a # submits to the current page)
+              method is how the information is going to be sent
+                the get method is uynsecure
+                the post method is secure -->
+        <form action="#" method="get">
+            <p>What is the javascript keyword for the HTML page?</p>
+            <div>
+                <!-- the label's for must match the field's id-->
+                <label for="answer">Your answer:</label>
+                <!--input fields require a few attributes:
+                    type - what kind of form field this is
+                    name - a label for the server to get the value
+                    id - links the form field to the label -->
+                <input type="text" name="answer" id="answer">
+            </div>
+            <div id="feedback"></div>
+        </form>
+    </main>
+
     <script src="scripts/scripts.js"></script>
-    <script>
-        alert("hello");
-    </script>
+    
 </body>
 </html>
